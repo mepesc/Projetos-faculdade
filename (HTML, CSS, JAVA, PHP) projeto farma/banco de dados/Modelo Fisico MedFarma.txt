@@ -1,0 +1,61 @@
+modelo fisico MedFarma
+
+drop database if exists MedFarma;{
+
+create table if not exists MedFarma;
+use FARMÁCIA;
+
+create table if not exists CLIENTE(
+    idcliente int auto_increment not null,
+    Nomecliente varchar(30),
+    endereço varchar(60)
+    telefone varchar(15),
+    numero de identifição varchar(32)
+    primary key (idcliente),
+    
+);
+creante table if not exists PRODUTOS_SERVICOS(
+    IDprodutos_sevicos int auto_increment not NULL
+    nome varchar(30),
+    descricao varchar(30),
+    valor decimal(10,2),
+    fornecedor varchar(30),
+    tipo varchar(45),
+    primary key(idprodutos_servicos),
+    FOREIGN key (idcliente) references cliente(idcliente),
+);
+create table if not exists item(
+    quantidade int,
+    valortotal decimal(10,2)
+    idvendas INT,
+    idprotudos_servidos int,
+    primary KEY(idvendas,idprodutos_servicos)
+    FOREIGN KEY(idvendas)REFERENCES vendas (idvendas),
+    Foreign Key (idprodutos_servicos) REFERENCES produtos_servicos (idprodutos_servicos),
+);
+
+/*inserir valores--->idtem,quantidade,valortotal,idvendas,idprodutos_servicos*/
+insert into item VALUES
+(2,32.00,1,1),
+(2,35.00,2,2),
+(2,60.00,2,3),
+(2,52.00,3,4),
+(2,30.00,5,6),
+(2,8.50,7,8),
+(2,35.00,7,6),
+(3,23.70,2,5),
+(2,65.00,7,6);
+    select * FROM  PRODUTOS_SERVICOS;
+    select * FROM VENDAS;
+    select * FROM ITEM;
+    /*1 EXibir os dados dos nomes dos clientes.*/
+select  C.nomecliente,C.idcliente
+FROM CC,cliente C
+where CC.idcliente=c.idcliente;
+ /*2 quais os produtos cadastrados da farmacia*/
+select * from protudor_servicos a where p.fornecerdor LIKE "%farmacia%"
+/*3. qual o valor de valor da venda mais cara realizada pelo loja
+maior preço na tabela vendas com titulo "venda mais cara"*/
+select*from vendas;
+select max(valortotal) if "venda mais cara" from venda;
+ }

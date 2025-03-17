@@ -1,0 +1,80 @@
+*{margin: 0; padding: 0;}
+
+body {
+	background-color: #ECE9F1;
+	font-family: arial, helvetica;
+	font-size: 20px;
+}
+
+.logo{
+	position: absolute;
+	top: 30px;
+	left: 10px;
+}
+
+.botao-home{
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: 0;
+	left: 83%;
+	border: none;
+	cursor: pointer;
+}
+
+.botao-home:hover{
+	background-color: #ECE9F1;
+}
+
+form{
+	margin-top: 15%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+}
+
+form div + div {
+	margin-top: 10px;
+}
+
+input, textarea{
+	font-size: 15px;
+	width: 400px;
+	border: none;
+	padding: 5px;
+	text-align: left;
+	background-color: #E1AFFF;
+}
+
+input:focus, textarea:focus{
+	border-color: 0;
+}
+
+textarea{
+	vertical-align: bottom;
+	height: 10em;
+}
+
+
+.texto-cadastro{
+	position: absolute;
+	font-size: 30px;
+	left: 19em;
+	top: 2em;
+	text-align: justify;
+	font-weight: bold;
+}
+
+.botao-salvar{
+	position: absolute;
+	background-color: #E1AFFF;
+	font-size: 17px;
+	padding: 5px;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	display: block;
+	right: 45%;
+	left: 45%;
+	top: 80%;
+}

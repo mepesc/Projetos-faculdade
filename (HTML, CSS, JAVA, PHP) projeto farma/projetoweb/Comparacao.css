@@ -1,0 +1,92 @@
+*{margin: 0; padding: 0;}
+
+body {
+	background-color: #ECE9F1;
+	font-family: arial, helvetica;
+	font-size: 20px;
+}
+
+.logo{
+	position: absolute;
+	top: 30px;
+	left: 10px;
+}
+
+.botao-home{
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	left: 83%;
+	border: none;
+	cursor: pointer;
+}
+
+.botao-home:hover{
+	background-color: #ECE9F1;
+}
+
+.BarraBusca{
+	position: absolute;
+	background-color:#D9D9D9;
+	border:solid 1px;
+	border-radius:15px;
+	height:auto;
+	width:500px;
+	top: 75px;
+	left: 23em;
+}
+
+.TextoBusca{
+	float:left;
+	background-color:transparent;
+	padding-left:5px;
+	font-style:italic;
+	font-size:18px;
+	border:none;
+	border-radius:15px;
+	height:32px;
+	width:495px;
+}
+
+.texto-remedio{
+	position: absolute;
+	font-size: 30px;
+	left: 19em;
+	top: 32%;
+	text-align: justify;
+	font-weight: bold;
+}
+
+.menuc{
+	position: absolute;
+	list-style: none;
+	border: 1px;
+	align-items: center;
+	text-align: center;
+    width: auto;
+    height:auto;
+    margin-top: 250px;
+    left: 12em;
+    right: 12em;
+}
+
+.menuc li{
+	float: left;
+	padding: 30px;
+}
+
+.menuc li a{
+	color:#333;
+	padding:10px 10px;
+	display:block;
+	text-decoration: none;
+}
+
+.menuc li a:hover{
+    background:#ECE9F1;
+    border: 2px solid;
+}
+.negrito{
+	font-weight: bold;
+	margin-bottom: 1em;
+}
